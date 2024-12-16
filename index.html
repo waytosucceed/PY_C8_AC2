@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+
+    <p style="text-align: center; font-size: 1.7rem; font-weight: bold; margin-bottom: 0;">Activity
+        👉🏽<a href="https://colab.research.google.com/" target="_blank" class="button">Open Google Collab</a>
+    </p>
+    <main style="width: 80%;">
+        <section id="activity1">
+            <h2>Activity 1</h2>
+            <p>There are different units of measuring temperature, do you know any?
+<br><br>
+                Celsius, Fahrenheit, and Kelvin are different units we use to measure temperature. Today your challenge is to create a temperature converter. You will give options to the user asking them from which unit to which they wish temperature to be converted and then accordingly show the result. You need to use the function to do that. 
+                </p>
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+            <img src="./images/sc1.png" class="answer-img" id="answer-img1" alt="Temperature Conversion example" style=" max-width: 600px;">
+        </section>
+    
+        <section id="activity2">
+            <h2>Activity 2</h2>
+            <p>Write a program to take 3 numbers as input from the user and print the greatest number.<br>Create a function to find the greatest number.</p>
+            <button class="show-answer-btn" id="show-answer-btn2">Show Code</button>
+            <img src="./images/sc2.png" style="max-width: 600px;" class="answer-img" id="answer-img2" alt="Greatest Number example"  style=" max-width: 600px;">
+        </section>
+    </main>
+    
+
+    <button class="challenge-btn" onclick="window.location.href='challenges.html'">Challenges</button>
+
+    <script>
+        document.getElementById('show-answer-btn1').addEventListener('click', function() {
+            var img = document.getElementById('answer-img1');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Answer';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Answer';
+            }
+        });
+
+        document.getElementById('show-answer-btn2').addEventListener('click', function() {
+            var img = document.getElementById('answer-img2');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Answer';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Answer';
+            }
+        });
+    </script>
+
+</body>
+</html>
